@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SecureHash Inc</title>
+    <link rel="icon" type="image/x-icon" href="/images/favicon.ico" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+  <body>
+    <section class="service">
+      <nav>
+        <a href="index.html" class="nav-a">
+          <img src="images/logo1.png" alt=""
+        /></a>
+        <div class="s-nav-links" id="navLinks">
+          <i class="fa fa-times" onclick="hideMenu()"></i>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="training.html">Training</a></li>
+          </ul>
+        </div>
+        <div class="s-contact">
+          <a href="contact.html">Contact</a>
+        </div>
+        <i class="fa fa-bars" onclick="showMenu()"></i>
+      </nav>
+    </section>
+
+    <section class="core-value" style="width: 75%;">
+      <h1>ABOUT US</h1>
+      <p style="color: #000; font-size: 20px; font-weight: 500; line-height: 32px;">
+        At SecureHash Inc, we understand that your data can be your greatest
+        asset and it is our goal to keep it safe. We are committed to providing
+        the best solutions to help prevent, detect and respond to your
+        cybersecurity threats. We offer only the highest standards of practice
+        in the industry, integrating technology, people and organizational
+        policies, and seek to minimize any risks to your organization. For us,
+        your security is our mission.
+      </p>
+    </section>
+
+    <section class="footer">
+      <div class="f-row">
+        <div class="quick">
+          <h4>Quick links</h4>
+          <ul>
+            <li><a href="">Home</a></li>
+            <li><a href="">About</a></li>
+            <li><a href="">Services</a></li>
+            <li><a href="">Contact</a></li>
+          </ul>
+        </div>
+        <div class="address">
+          <h4>Address:</h4>
+          <p>Email address: <a href="">support@securehash.ca</a></p>
+          <p>Phone: <a href="">+1647-836-528</a></p>
+          <p>
+            Contact address:
+            <a href=""
+              >28 Clockwork Drive <br />Brampton, L7A4R8 Ontario, Canada</a
+            >
+          </p>
+        </div>
+        <div class="follow">
+          <h4>Follow us</h4>
+          <a href=""><i class="fa fa-instagram"></i>instagram</a>
+        </div>
+        <div class="back-to-top">
+          <h4>Back to the top</h4>
+          <a href="" onclick="topFunction()" id="myBtn"
+            ><img src="images/upload.png" alt=""
+          /></a>
+        </div>
+      </div>
+
+      <div class="copy">
+        &#169;Copyright Reserved to
+        <span style="color: #00b800">SecureHash Inc</span>
+      </div>
+    </section>
+
+    <script>
+      function topFunction() {
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
+      }
+
+      var navLinks = document.getElementById("navLinks");
+      function showMenu() {
+        navLinks.style.right = "0";
+      }
+      function hideMenu() {
+        navLinks.style.right = "-200px";
+      }
+    </script>
+  </body>
+</html>

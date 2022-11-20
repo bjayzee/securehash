@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SecureHash Inc</title>
+    <link rel="icon" type="image/x-icon" href="/images/favicon.ico" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+  <body>
+    <section class="service">
+      <nav>
+        <a href="index.html" class="nav-a">
+          <img src="images/logo1.png" alt=""
+        /></a>
+        <div class="s-nav-links" id="navLinks">
+          <i class="fa fa-times" onclick="hideMenu()"></i>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="training.html">Training</a></li>
+          </ul>
+        </div>
+        <div class="s-contact">
+          <a href="#">Contact</a>
+        </div>
+        <i class="fa fa-bars" onclick="showMenu()"></i>
+      </nav>
+    </section>
+
+    <section class="core-value">
+      <h1>We have the best training modules</h1>
+
+      <section class="row">
+        <div class="training-col-s">
+          <p>
+            Security is now the focus of business leaders, and so there is an
+            increasing need for cybersecurity professionals around the world to
+            protect organization's digital assets from malicious individuals. At
+            SecureHash we can help train your inhouse security personnel/staff
+            or provide security consulting for your business. Join us in our
+            Cybersecurity Training programs to gain knowledge of the security
+            principles to help businesses manage their critical assets and build
+            a cyber-resilient workplace.
+          </p>
+          <h4>SecureHash Inc. Cybersecurity Modules</h4>
+
+          <div class="modules">
+            <h5>MODULE 1 - Cyber Security Foundations and Concepts</h5>
+            <h5>MODULE 2 - Threats Intelligence and Vulnerabilities Management
+            </h5>
+            <h5>MODULE 3 - Security Risk Assessments</h5>
+            <h5>
+              MODULE 4 - Understanding Cyber Security Controls and Mitigation
+              Strategies
+            </h5>
+            <h5>MODULE 5 - Security Awareness</h5>
+            <h5>MODULE 6 - Security Administration</h5>
+            <h5>MODULE 7 - Business Continuity and Disaster Recovery</h5>
+            <h5>MODULE 8 - Security Incidence Management</h5>
+            <h5>MODULE 9 - Understanding Insider Threats Detection</h5>
+            <h5>MODULE 10 - Security Policies, Processes and Procedures</h5>
+          </div>
+        </div>
+        <div class="training-col">
+          <h4>Our trainings provide the following qualifications</h4>
+          <img src="images/zigzag.png" alt="" />
+          <div class="training-title">
+            <h6>CISM Certified Information Security Manager</h6>
+            <h6>CISSP Certified Information Systems Security Professional</h6>
+            <h6>CISA Certified Information Systems Auditor</h6>
+            <h6>CRISC Certified in Risk and Information Systems Control</h6>
+            <h6>CCNA Cisco Certified Network Associate</h6>
+            <h6>CCNP Cisco Certified Network Professional</h6>
+            <h6>CCIE Cisco Certified Internetwork Expert</h6>
+          </div>
+          <img src="images/rafiki.png" alt="" />
+        </div>
+      </section>
+      <p>
+        For registration and training details please call or chat +16478365248
+      </p>
+    </section>
+
+    <section class="footer">
+      <div class="f-row">
+        <div class="quick">
+          <h4>Quick links</h4>
+          <ul>
+            <li><a href="">Home</a></li>
+            <li><a href="">About</a></li>
+            <li><a href="">Services</a></li>
+            <li><a href="">Contact</a></li>
+          </ul>
+        </div>
+        <div class="address">
+          <h4>Address:</h4>
+          <p>Email address: <a href="">support@securehash.ca</a></p>
+          <p>Phone: <a href="">+1647-836-528</a></p>
+          <p>
+            Contact address:
+            <a href=""
+              >28 Clockwork Drive <br />Brampton, L7A4R8 Ontario, Canada</a
+            >
+          </p>
+        </div>
+        <div class="follow">
+          <h4>Follow us</h4>
+          <a href=""><i class="fa fa-instagram"></i>instagram</a>
+        </div>
+        <div class="back-to-top">
+          <h4>Back to the top</h4>
+          <a href="" onclick="topFunction()" id="myBtn"
+            ><img src="images/upload.png" alt=""
+          /></a>
+        </div>
+      </div>
+
+      <div class="copy">
+        &#169;Copyright Reserved to
+        <span style="color: #00b800">SecureHash Inc</span>
+      </div>
+    </section>
+
+    <script>
+      function topFunction() {
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
+      }
+
+      var navLinks = document.getElementById("navLinks");
+      function showMenu() {
+        navLinks.style.right = "0";
+      }
+      function hideMenu() {
+        navLinks.style.right = "-200px";
+      }
+    </script>
+  </body>
+</html>

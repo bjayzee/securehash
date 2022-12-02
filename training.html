@@ -17,25 +17,36 @@
       rel="stylesheet"
       href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
     />
+  
   </head>
   <body>
     <section class="service">
       <nav>
-        <a href="index.html" class="nav-a">
-          <img src="images/logo1.png" alt=""
-        /></a>
+        <div>
+          <a href="index.html" class="nav-a">
+            <img src="images/logo1.png" alt="" /></a
+          >
+        </div>
         <div class="s-nav-links" id="navLinks">
           <i class="fa fa-times" onclick="hideMenu()"></i>
-          <ul>
-            <li><a href="index.html">Home</a></li>
+          <ul class="mininav">
+            <div class="trainingnav">
+                <li><a href="index.html">Home</a></li>
             <li><a href="about.html">About</a></li>
             <li><a href="services.html">Services</a></li>
             <li><a href="training.html">Training</a></li>
+            </div>
+            <div>
+                <li>
+                    <div class="s-contact">
+                      <a href="contact.html">Contact</a>
+                    </div>
+                  </li>
+            </div>
+           
           </ul>
         </div>
-        <div class="s-contact">
-          <a href="#">Contact</a>
-        </div>
+
         <i class="fa fa-bars" onclick="showMenu()"></i>
       </nav>
     </section>
@@ -43,59 +54,63 @@
     <section class="core-value">
       <h1>We have the best training modules</h1>
 
-      <section class="row">
-        <div class="training-col-s">
-          <p>
-            Security is now the focus of business leaders, and so there is an
-            increasing need for cybersecurity professionals around the world to
-            protect organization's digital assets from malicious individuals. At
-            SecureHash we can help train your inhouse security personnel/staff
-            or provide security consulting for your business. Join us in our
-            Cybersecurity Training programs to gain knowledge of the security
-            principles to help businesses manage their critical assets and build
-            a cyber-resilient workplace.
-          </p>
-          <h4>SecureHash Inc. Cybersecurity Modules</h4>
-
-          <div class="modules">
-            <h5>MODULE 1 - Cyber Security Foundations and Concepts</h5>
-            <h5>MODULE 2 - Threats Intelligence and Vulnerabilities Management
-            </h5>
-            <h5>MODULE 3 - Security Risk Assessments</h5>
-            <h5>
-              MODULE 4 - Understanding Cyber Security Controls and Mitigation
-              Strategies
-            </h5>
-            <h5>MODULE 5 - Security Awareness</h5>
-            <h5>MODULE 6 - Security Administration</h5>
-            <h5>MODULE 7 - Business Continuity and Disaster Recovery</h5>
-            <h5>MODULE 8 - Security Incidence Management</h5>
-            <h5>MODULE 9 - Understanding Insider Threats Detection</h5>
-            <h5>MODULE 10 - Security Policies, Processes and Procedures</h5>
+      <section class="container-fluid">
+        <div class="row">
+          <div class="col-md-7 col-lg-7 col-sm-12 col-xs-12" id="training-col-s">
+            <p>
+              Security is now the focus of business leaders, and so there is an
+              increasing need for cybersecurity professionals around the world to
+              protect organization's digital assets from malicious individuals. At
+              SecureHash we can help train your inhouse security personnel/staff
+              or provide security consulting for your business. Join us in our
+              Cybersecurity Training programs to gain knowledge of the security
+              principles to help businesses manage their critical assets and build
+              a cyber-resilient workplace.
+            </p>
+            <h4>SecureHash Inc. Cybersecurity Modules</h4>
+  
+            <div class="modules">
+              <h5>MODULE 1 - Cyber Security Foundations and Concepts</h5>
+              <h5>MODULE 2 - Threats Intelligence and Vulnerabilities Management
+              </h5>
+              <h5>MODULE 3 - Security Risk Assessments</h5>
+              <h5>
+                MODULE 4 - Understanding Cyber Security Controls and Mitigation
+                Strategies
+              </h5>
+              <h5>MODULE 5 - Security Awareness</h5>
+              <h5>MODULE 6 - Security Administration</h5>
+              <h5>MODULE 7 - Business Continuity and Disaster Recovery</h5>
+              <h5>MODULE 8 - Security Incidence Management</h5>
+              <h5>MODULE 9 - Understanding Insider Threats Detection</h5>
+              <h5>MODULE 10 - Security Policies, Processes and Procedures</h5>
+            </div>
           </div>
-        </div>
-        <div class="training-col">
-          <h4>Our trainings provide the following qualifications</h4>
-          <img src="images/zigzag.png" alt="" />
-          <div class="training-title">
-            <h6>CISM Certified Information Security Manager</h6>
-            <h6>CISSP Certified Information Systems Security Professional</h6>
-            <h6>CISA Certified Information Systems Auditor</h6>
-            <h6>CRISC Certified in Risk and Information Systems Control</h6>
-            <h6>CCNA Cisco Certified Network Associate</h6>
-            <h6>CCNP Cisco Certified Network Professional</h6>
-            <h6>CCIE Cisco Certified Internetwork Expert</h6>
+          <div class="col-md-5 col-lg-5 col-sm-12 col-xs-12" id="training-col">
+            <h4>Our trainings provide the following qualifications</h4>
+            <img src="images/zigzag.png" alt="" />
+            <div class="training-title">
+              <div class="training-item">CISM <br>Information Security Manager</div>
+              <div class="training-item">CISSP <br>Certified Information Systems Security Professional</div>
+              <div class="training-item">CISA <br>Certified Information Systems Auditor</div>
+              <div class="training-item">CRISC <br>Certified in Risk and Information Systems Control</div>
+              <div class="training-item">CCNA <br>Cisco Certified Network Associate</div>
+              <div class="training-item">CCNP <br>Cisco Certified Network Professional</div>
+              <div class="training-item">CCIE <br>Cisco Certified Internetwork Expert</div>
+            </div>
+            <img src="images/rafiki.png" alt="" />
           </div>
-          <img src="images/rafiki.png" alt="" />
-        </div>
-      </section>
-      <p>
-        For registration and training details please call or chat +16478365248
-      </p>
+        </section>
+        <p>
+          For registration and training details please call or chat +16478365248
+        </p>
+      </div>
+       
+       
     </section>
 
     <section class="footer">
-      <div class="f-row">
+      <div class="row">
         <div class="quick">
           <h4>Quick links</h4>
           <ul>
@@ -117,7 +132,7 @@
           </p>
         </div>
         <div class="follow">
-          <h4>Follow us</h4>
+          <h4>Follow us</h4> <br>
           <a href=""><i class="fa fa-instagram"></i>instagram</a>
         </div>
         <div class="back-to-top">

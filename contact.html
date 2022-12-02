@@ -42,41 +42,56 @@
 
     <section class="core-value">
       <h1>Get in touch with us</h1>
-      
+
       <section class="row">
-            <div class="" id="table-title">
-                <h2>Contact Details</h2>
-                <div class="contact-col">
-                    <img src="images/logo5.png" alt="" />
-                    <p>
-                    Have a project in mind? Not sure what you need? Or just don’t know
-                    where to start? We would love to hear from you. Get in touch with
-                    us.
-                    </p>
-                    <div class="contact-us">
-                    <p style="padding-bottom: 0;">Phone: <a href="">+1 647 836 5248</a></p>
-                    <p style="padding-top: 0; margin-bottom: 50px;">Email: <a href="">support@securehash.ca</a></p>
-                    </div>
-                    <a href="" class="view-location">View Location</a>
-                </div>
+        <div class="" id="table-title">
+          <h2>Contact Details</h2>
+          <div class="contact-col">
+            <img src="images/logo5.png" alt="" />
+            <p>
+              Have a project in mind? Not sure what you need? Or just don’t know
+              where to start? We would love to hear from you. Get in touch with
+              us.
+            </p>
+            <div class="contact-us">
+              <p style="padding-bottom: 0">
+                Phone: <a href="">+1 647 836 5248</a>
+              </p>
+              <p style="padding-top: 0; margin-bottom: 50px">
+                Email: <a href="">support@securehash.ca</a>
+              </p>
             </div>
-            <div class="" id="table-title">
-                <h2>Contact Form</h2>
-                <form class="contact-col" id="form">
-                    <label for="name" id="name">Name</label> <br>
-                    <input type="text" id="name-value"><br>
-                    <label for="" id="email">Email Address</label><br>
-                    <input type="text" id="email-value"><br>
-                    <label for="" id="message">Message</label><br>
-                    <input type="text" id="message-value"><br>
-                    <button type="submit" id="submit">Send</button>          
-                </form>
-            </div>
+            <a class="view-location" id="map" onclick="initMap()">View Location</a>     
+          </div>
+        </div>
+        <div class="" id="table-title">
+          <h2>Contact Form</h2>
+          <form
+            class="contact-col"
+            id="form"
+            action="mailto:bjayzee@gmail.com"
+            method="post"
+            enctype="text/plain"
+          >
+            <label for="name" id="name">Name</label> <br />
+            <input type="text" id="name-value" /><br />
+            <label for="" id="email">Email Address</label><br />
+            <input type="text" id="email-value" /><br />
+            <label for="" id="message">Message</label><br />
+            <textarea id="message-value" /></textarea><br />
+            <button type="submit" id="submit">Send</button>
+          </form>
+        </div>
       </section>
+    </section>
+    <section id="google-map">
+      <div class="map">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2884.357747413377!2d-79.8514892007609!3d43.7031139541796!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x882b13ea9b0ab219%3A0x18ed911efc0bc4c!2s28%20Clockwork%20Dr%2C%20Brampton%2C%20ON%20L7A%200G4%2C%20Canada!5e0!3m2!1sen!2sng!4v1669548804591!5m2!1sen!2sng" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
     </section>
 
     <section class="footer">
-      <div class="f-row">
+      <div class="row">
         <div class="quick">
           <h4>Quick links</h4>
           <ul>
@@ -98,7 +113,7 @@
           </p>
         </div>
         <div class="follow">
-          <h4>Follow us</h4>
+          <h4>Follow us</h4> <br>
           <a href=""><i class="fa fa-instagram"></i>instagram</a>
         </div>
         <div class="back-to-top">
@@ -127,6 +142,11 @@
       }
       function hideMenu() {
         navLinks.style.right = "-200px";
+      }
+
+      function initMap(){
+        document.getElementById("google-map").style.display = "inline"
+        document.getElementById("google-map").style.marginTop = "50px"
       }
     </script>
   </body>

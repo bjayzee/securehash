@@ -21,21 +21,31 @@
   <body>
     <section class="service">
       <nav>
-        <a href="index.html" class="nav-a">
-          <img src="images/logo1.png" alt=""
-        /></a>
+        <div>
+          <a href="index.html" class="nav-a">
+            <img src="images/logo1.png" alt="" /></a
+          >
+        </div>
         <div class="s-nav-links" id="navLinks">
           <i class="fa fa-times" onclick="hideMenu()"></i>
-          <ul>
-            <li><a href="index.html">Home</a></li>
+          <ul class="mininav">
+            <div class="first">
+                <li><a href="index.html">Home</a></li>
             <li><a href="about.html">About</a></li>
-            <li><a href="#">Services</a></li>
+            <li><a href="services.html">Services</a></li>
             <li><a href="training.html">Training</a></li>
+            </div>
+            <div>
+                <li>
+                    <div class="s-contact">
+                      <a href="contact.html">Contact</a>
+                    </div>
+                  </li>
+            </div>
+           
           </ul>
         </div>
-        <div class="s-contact">
-          <a href="contact.html">Contact</a>
-        </div>
+
         <i class="fa fa-bars" onclick="showMenu()"></i>
       </nav>
     </section>
@@ -169,7 +179,7 @@
     </section>
 
     <section class="footer">
-      <div class="f-row">
+      <div class="row">
         <div class="quick">
           <h4>Quick links</h4>
           <ul>
@@ -191,7 +201,7 @@
           </p>
         </div>
         <div class="follow">
-          <h4>Follow us</h4>
+          <h4>Follow us</h4> <br>
           <a href=""><i class="fa fa-instagram"></i>instagram</a>
         </div>
         <div class="back-to-top">

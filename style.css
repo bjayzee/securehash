@@ -24,8 +24,10 @@ body {
 }
 
 .service {
-  min-width: 100vw;
+  /* min-width: 100vw; */
   overflow-x: hidden;
+  position: relative;
+  /* min-height: 100vh; */
 }
 
 nav {
@@ -249,10 +251,9 @@ nav .fa {
 
   .s-nav-links {
     position: absolute;
-    background: white;
+    background: #72DC78;
     height: 100vh;
     width: 200px;
-    /* color: #155226; */
     top: 0;
     text-align: left;
     z-index: 2;
@@ -303,6 +304,11 @@ p {
 
 .row {
   margin-top: 5%;
+  display: flex;
+  justify-content: space-between;
+}
+#service-row {
+  /* margin-top: 5%; */
   display: flex;
   justify-content: space-between;
 }
@@ -366,6 +372,15 @@ h3 {
     flex-direction: column;
     text-align: center;
   }
+  .training-row {
+    margin-top: 5%;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    justify-content: center;}
+    #training-col{
+      height: 100%;
+    }
 }
 
 .copy {
@@ -509,12 +524,13 @@ display: block;
   flex-basis: 48%;
   background: transparent;
   border-radius: 10px;
-  padding: 20px 12px 0 25px;
+  padding: 20px 10px 0 25px;
   box-sizing: border-box;
   border: 1px solid #155226;
   height: 300px;
   width: 550px;
   text-align: left;
+  margin-bottom: 6%;
 }
 
 .service-col h3 {
@@ -625,7 +641,7 @@ display: block;
   /* padding: 20px 33px 0 33px; */
   box-sizing: border-box;
   border: 3px solid #155226;
-  height: 1100px;
+  /* height: 1100px; */
   text-align: center;
   display: flex;
   flex-direction: column;

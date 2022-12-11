@@ -21,69 +21,81 @@
   <body>
     <section class="service">
       <nav>
-        <a href="index.html" class="nav-a">
-          <img src="images/logo1.png" alt=""
-        /></a>
+        <div>
+          <a href="index.html" class="nav-a">
+            <img src="images/logo1.png" alt="" /></a
+          >
+        </div>
         <div class="s-nav-links" id="navLinks">
           <i class="fa fa-times" onclick="hideMenu()"></i>
-          <ul>
-            <li><a href="index.html">Home</a></li>
+          <ul class="mininav">
+            <div class="first">
+                <li><a href="index.html">Home</a></li>
             <li><a href="about.html">About</a></li>
             <li><a href="services.html">Services</a></li>
             <li><a href="training.html">Training</a></li>
+            </div>
+            <div>
+                <li>
+                    <div class="s-contact">
+                      <a href="contact.html">Contact</a>
+                    </div>
+                  </li>
+            </div>
+           
           </ul>
         </div>
-        <div class="s-contact">
-          <a href="#">Contact</a>
-        </div>
+
         <i class="fa fa-bars" onclick="showMenu()"></i>
       </nav>
-    </section>
 
-    <section class="core-value">
-      <h1>Get in touch with us</h1>
-
-      <section class="row">
-        <div class="" id="table-title">
-          <h2>Contact Details</h2>
-          <div class="contact-col">
-            <img src="images/logo5.png" alt="" />
-            <p>
-              Have a project in mind? Not sure what you need? Or just don’t know
-              where to start? We would love to hear from you. Get in touch with
-              us.
-            </p>
-            <div class="contact-us">
-              <p style="padding-bottom: 0">
-                Phone: <a href="tel:+16478365248">+1 647 836 5248</a>
+      <section class="core-value">
+        <h1>Get in touch with us</h1>
+  
+        <section class="row">
+          <div class="" id="table-title">
+            <h2>Contact Details</h2>
+            <div class="contact-col">
+              <img src="images/logo5.png" alt="" />
+              <p>
+                Have a project in mind? Not sure what you need? Or just don’t know
+                where to start? We would love to hear from you. Get in touch with
+                us.
               </p>
-              <p style="padding-top: 0; margin-bottom: 50px">
-                Email: <a href="mailto:info@securehash.com">info@securehash.ca</a>
-              </p>
+              <div class="contact-us">
+                <p style="padding-bottom: 0">
+                  Phone: <a href="tel:+16478365248">+1 647 836 5248</a>
+                </p>
+                <p style="padding-top: 0; margin-bottom: 50px">
+                  Email: <a href="mailto:info@securehash.com">info@securehash.ca</a>
+                </p>
+              </div>
+              <a class="view-location" id="map" onclick="initMap()">View Location</a>     
             </div>
-            <a class="view-location" id="map" onclick="initMap()">View Location</a>     
           </div>
-        </div>
-        <div class="" id="table-title">
-          <h2>Contact Form</h2>
-          <form
-            class="contact-col"
-            id="form"
-            action="mailto:bjayzee@gmail.com"
-            method="post"
-            enctype="text/plain"
-          >
-            <label for="name" id="name">Name</label> <br />
-            <input type="text" id="name-value" /><br />
-            <label for="" id="email">Email Address</label><br />
-            <input type="text" id="email-value" /><br />
-            <label for="" id="message">Message</label><br />
-            <textarea id="message-value" /></textarea><br />
-            <button type="submit" id="submit">Send</button>
-          </form>
-        </div>
+          <div class="" id="table-title">
+            <h2>Contact Form</h2>
+            <form
+              class="contact-col"
+              id="form"
+              action="mailto:bjayzee@gmail.com"
+              method="post"
+              enctype="text/plain"
+            >
+              <label for="name" id="name">Name</label> <br />
+              <input type="text" id="name-value" /><br />
+              <label for="" id="email">Email Address</label><br />
+              <input type="text" id="email-value" /><br />
+              <label for="" id="message">Message</label><br />
+              <textarea id="message-value" /></textarea><br />
+              <button type="submit" id="submit">Send</button>
+            </form>
+          </div>
+        </section>
       </section>
     </section>
+
+    
     <section id="google-map">
       <div class="map">
         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2884.357747413377!2d-79.8514892007609!3d43.7031139541796!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x882b13ea9b0ab219%3A0x18ed911efc0bc4c!2s28%20Clockwork%20Dr%2C%20Brampton%2C%20ON%20L7A%200G4%2C%20Canada!5e0!3m2!1sen!2sng!4v1669548804591!5m2!1sen!2sng" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>

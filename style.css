@@ -249,6 +249,15 @@ nav .fa {
     padding: 0
   }
 
+  .s-contact-index a {
+    font-size: 14px;
+    line-height: 20px;
+    color: black;
+    padding: 5px 19px;
+    background-color: white;
+    padding: 0
+  }
+
   .s-nav-links {
     position: absolute;
     background: #72DC78;
@@ -486,7 +495,26 @@ display: block;
   border: 1px solid #155226;
 }
 
+.s-contact-index a {
+  text-align: right;
+  text-decoration: none;
+  color: #155226;
+  font-size: 20px;
+  line-height: 30px;
+  font-weight: 400px;
+  /* color: #155226; */
+  background: white;
+  border-radius: 10px;
+  padding: 5px 19px;
+}
+
+
 .s-contact a:hover {
+  background: #155226;
+  color: #fff;
+}
+
+.s-contact-index a:hover {
   background: #155226;
   color: #fff;
 }

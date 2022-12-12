@@ -528,9 +528,7 @@ display: block;
   box-sizing: border-box;
   border: 1px solid #155226;
   height: 300px;
-  width: 550px;
   text-align: left;
-  margin-bottom: 6%;
 }
 
 .service-col h3 {
@@ -638,7 +636,6 @@ display: block;
   background: transparent;
   border-radius: 10px;
   padding: 20px;
-  /* padding: 20px 33px 0 33px; */
   box-sizing: border-box;
   border: 3px solid #155226;
   /* height: 1100px; */
@@ -666,7 +663,7 @@ display: block;
   color: #fff;
   padding: 20px 33px 0 33px;
   text-align: left;
-  height: 1100px;
+  /* height: 1100px; */
   box-sizing: border-box;
   border-radius: 10px;
   font-weight: 700;

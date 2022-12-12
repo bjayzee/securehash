@@ -289,6 +289,9 @@ nav .fa {
   padding-top: 100px;
   text-align: center;
 }
+.service-col{
+  margin-bottom: 5%;
+}
 
 .core-value {
   width: 85%;
@@ -416,6 +419,7 @@ display: block;
 
 .quick a {
   text-decoration: none;
+  color: #000;
   /* color: black; */
 
 }

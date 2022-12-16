@@ -315,7 +315,6 @@ p {
 }
 
 .row {
-  margin-top: 5%;
   display: flex;
   justify-content: space-between;
 }
@@ -323,6 +322,14 @@ p {
   /* margin-top: 5%; */
   display: flex;
   justify-content: space-between;
+}
+
+.contact-row {
+  max-width: 1200px;
+  margin:auto;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  gap:30px;
 }
 
 .training-row {
@@ -383,6 +390,10 @@ h3 {
   .row {
     flex-direction: column;
     text-align: center;
+  }
+
+  .contact-row {
+    display: block;
   }
   .training-row {
     margin-top: 5%;
@@ -591,21 +602,21 @@ display: block;
 #table-title {
   margin-top: 100px;
   text-align: center;
-  margin-bottom: 50px;
+  /* margin-bottom: 50px; */
 }
 
 .contact-col {
-  flex-basis: 41%;
+  /* flex-basis: 41%; */
   background: transparent;
   border-radius: 10px;
   padding: 20px 33px 0 33px;
-  box-sizing: border-box;
   border: 1px solid #155226;
-  height: 600px;
-  width: 500px;
+  min-height: 600px;
   text-align: center;
 
 }
+
+
 
 .contact-col img {
   height: 117px;
@@ -623,24 +634,28 @@ display: block;
 .view-location {
   border: 1px solid #155226;
   border-radius: 20px;
-  width: 433px;
-  height: 40px;
-  padding: 5px 140px;
+  width: 100%;
   color: #000;
+  padding: 5px 0;
   font-size: 18px;
   font-weight: 700;
   cursor: pointer;
+  margin-bottom: 10px;
 }
 
 #form {
-  text-align: left;
   background: #155226;
-  display: flex;
-  /* justify-content: s; */
-  flex-direction: column;
+ 
   font-weight: 400;
   font-size: 20px;
 }
+
+#form input, #form textarea, #form button {
+  width: 100%;
+  margin: 10px 0 30px 0;
+}
+
+
 
 #name-value,
 #email-value {
@@ -648,7 +663,7 @@ display: block;
 }
 
 #message-value {
-  height: 280px;
+  height: 150px;
 
 }
 

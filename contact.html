@@ -17,6 +17,8 @@
       rel="stylesheet"
       href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
     />
+    <script src="https://smtpjs.com/v3/smtp.js">
+    </script>
   </head>
   <body>
     <section class="service">
@@ -52,7 +54,7 @@
       <section class="core-value">
         <h1>Get in touch with us</h1>
   
-        <section class="row">
+        <section class="contact-row">
           <div class="col-row" id="table-title">
             <h2>Contact Details</h2>
             <div class="contact-col">
@@ -70,26 +72,25 @@
                   Email: <a href="mailto:info@securehash.com">info@securehash.ca</a>
                 </p>
               </div>
-              <a class="view-location" id="map" onclick="initMap()">View Location</a>     
+              <div class="view-location">
+                <a id="map" onclick="initMap()">View Location</a>     
+
+              </div>
             </div>
           </div>
           <div class="col-row" id="table-title">
             <h2>Contact Form</h2>
-            <form
-              class="contact-col"
-              id="form"
-              action="mailto:bjayzee@gmail.com"
-              method="post"
-              enctype="text/plain"
-            >
-              <label for="name" id="name">Name</label> <br />
-              <input type="text" id="name-value" /><br />
-              <label for="" id="email">Email Address</label><br />
-              <input type="text" id="email-value" /><br />
-              <label for="" id="message">Message</label><br />
-              <textarea id="message-value" /></textarea><br />
-              <button type="submit" id="submit">Send</button>
-            </form>
+              <form id="form" class="contact-col" style="text-align: left;">
+
+                <label for="name" id="name">Name</label> <br />
+                <input type="text" id="name-value" /><br />
+                <label for="" id="email">Email Address</label><br />
+                <input type="text" id="email-value" /><br />
+                <label for="" id="message">Message</label><br />
+                <textarea id="message-value" /></textarea><br />
+                <button type="submit" id="submit">Send</button>
+              </form>
+           
           </div>
         </section>
       </section>
@@ -143,6 +144,7 @@
     </section>
 
     <script>
+      
       function topFunction() {
         document.body.scrollTop = 0;
         document.documentElement.scrollTop = 0;
@@ -163,6 +165,19 @@
       function closeMap(){
         document.getElementById("google-map").style.display = "none"
         // document.getElementById("google-map").style.marginTop = "50px"
+      }
+      function submitMail(){
+        Email.send({
+              SecureToken : "bcdc3f13-ba1b-4377-b3fc-f6d2dcb72912",
+              To : 'info@securehash.ca',
+              From : document.getElementById("email-value").value,
+              Subject : "New Contact form Enquiry",
+              Body : "Name: "+ document.getElementById("name-value").value
+                + "<br> Email: "+ document.getElementById("email-value").value
+                + "<br> Message: "+ document.getElementById("message-value").value
+          }).then(
+            message => alert("Message delivered successfully")
+          );
       }
     </script>
   </body>

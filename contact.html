@@ -17,34 +17,31 @@
       rel="stylesheet"
       href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
     />
-    <script src="https://smtpjs.com/v3/smtp.js">
-    </script>
   </head>
   <body>
     <section class="service">
       <nav>
         <div>
           <a href="index.html" class="nav-a">
-            <img src="images/logo1.png" alt="" /></a
-          >
+            <img src="images/logo1.png" alt=""
+          /></a>
         </div>
         <div class="s-nav-links" id="navLinks">
           <i class="fa fa-times" onclick="hideMenu()"></i>
           <ul class="mininav">
             <div class="first">
-                <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="services.html">Services</a></li>
-            <li><a href="training.html">Training</a></li>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="about.html">About</a></li>
+              <li><a href="services.html">Services</a></li>
+              <li><a href="training.html">Training</a></li>
             </div>
             <div>
-                <li>
-                    <div class="s-contact">
-                      <a href="contact.html">Contact</a>
-                    </div>
-                  </li>
+              <li>
+                <div class="s-contact">
+                  <a href="contact.html">Contact</a>
+                </div>
+              </li>
             </div>
-           
           </ul>
         </div>
 
@@ -53,53 +50,66 @@
 
       <section class="core-value">
         <h1>Get in touch with us</h1>
-  
+
         <section class="contact-row">
           <div class="col-row" id="table-title">
             <h2>Contact Details</h2>
             <div class="contact-col">
               <img src="images/logo5.png" alt="" />
               <p>
-                Have a project in mind? Not sure what you need? Or just don’t know
-                where to start? We would love to hear from you. Get in touch with
-                us.
+                Have a project in mind? Not sure what you need? Or just don’t
+                know where to start? We would love to hear from you. Get in
+                touch with us.
               </p>
               <div class="contact-us">
                 <p style="padding-bottom: 0">
                   Phone: <a href="tel:+16478365248">+1 647 836 5248</a>
                 </p>
                 <p style="padding-top: 0; margin-bottom: 50px">
-                  Email: <a href="mailto:info@securehash.com">info@securehash.ca</a>
+                  Email:
+                  <a href="mailto:info@securehash.com">info@securehash.ca</a>
                 </p>
               </div>
               <div class="view-location">
-                <a id="map" onclick="initMap()">View Location</a>     
-
+                <a id="map" onclick="initMap()">View Location</a>
               </div>
             </div>
           </div>
           <div class="col-row" id="table-title">
             <h2>Contact Form</h2>
-              <form id="form" class="contact-col" style="text-align: left;">
-
-                <label for="name" id="name">Name</label> <br />
-                <input type="text" id="name-value" /><br />
-                <label for="" id="email">Email Address</label><br />
-                <input type="text" id="email-value" /><br />
-                <label for="" id="message">Message</label><br />
-                <textarea id="message-value" /></textarea><br />
-                <button type="submit" id="submit">Send</button>
-              </form>
-           
+            <form
+            action="mail.php"
+              id="form"
+              class="contact-col"
+              style="text-align: left"
+              method="post"
+            >
+              <label for="name" id="name">Name</label> <br />
+              <input type="text" id="name-value" name="name" required /><br />
+              <label for="" id="email">Email Address</label><br />
+              <input type="text" id="email-value" name="email" required /><br />
+              <label for="" id="message">Message</label><br />
+              <textarea id="message-value" name="message" required></textarea><br />
+              <button type="submit" id="submit">
+                Send
+              </button>
+            </form>
           </div>
         </section>
       </section>
     </section>
 
-    
     <section id="google-map">
       <div class="map">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2884.357747413377!2d-79.8514892007609!3d43.7031139541796!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x882b13ea9b0ab219%3A0x18ed911efc0bc4c!2s28%20Clockwork%20Dr%2C%20Brampton%2C%20ON%20L7A%200G4%2C%20Canada!5e0!3m2!1sen!2sng!4v1669548804591!5m2!1sen!2sng" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2884.357747413377!2d-79.8514892007609!3d43.7031139541796!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x882b13ea9b0ab219%3A0x18ed911efc0bc4c!2s28%20Clockwork%20Dr%2C%20Brampton%2C%20ON%20L7A%200G4%2C%20Canada!5e0!3m2!1sen!2sng!4v1669548804591!5m2!1sen!2sng"
+          width="100%"
+          height="450"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
       </div>
     </section>
 
@@ -116,18 +126,26 @@
         </div>
         <div class="address">
           <h4>Address:</h4>
-          <p>Email address: <a href="mailto:info@securehash.com">info@securehash.ca</a></p>
+          <p>
+            Email address:
+            <a href="mailto:info@securehash.com">info@securehash.ca</a>
+          </p>
           <p>Phone: <a href="tel:+1647-836-528">+1647-836-528</a></p>
           <p>
             Contact address:
-            <a href="https://www.google.com/maps/place/28+Clockwork+Dr,+Brampton,+ON+L7A+0G4,+Canada/@43.703268,-79.851666,16z/data=!4m5!3m4!1s0x882b13ea9b0ab219:0x18ed911efc0bc4c!8m2!3d43.7032676!4d-79.8516661?hl=en" target="_blank"
+            <a
+              href="https://www.google.com/maps/place/28+Clockwork+Dr,+Brampton,+ON+L7A+0G4,+Canada/@43.703268,-79.851666,16z/data=!4m5!3m4!1s0x882b13ea9b0ab219:0x18ed911efc0bc4c!8m2!3d43.7032676!4d-79.8516661?hl=en"
+              target="_blank"
               >28 Clockwork Drive <br />Brampton, L7A4R8 Ontario, Canada</a
             >
           </p>
         </div>
         <div class="follow">
-          <h4>Follow us</h4> <br>
-          <a href="https://www.instagram.com/securehash_inc/" target="_blank"><i class="fa fa-instagram"></i>instagram</a>
+          <h4>Follow us</h4>
+          <br />
+          <a href="https://www.instagram.com/securehash_inc/" target="_blank"
+            ><i class="fa fa-instagram"></i>instagram</a
+          >
         </div>
         <div class="back-to-top">
           <h4>Back to the top</h4>
@@ -143,8 +161,8 @@
       </div>
     </section>
 
-    <script>
-      
+    <script >
+
       function topFunction() {
         document.body.scrollTop = 0;
         document.documentElement.scrollTop = 0;
@@ -168,17 +186,24 @@
       }
       function submitMail(){
         Email.send({
-              SecureToken : "bcdc3f13-ba1b-4377-b3fc-f6d2dcb72912",
-              To : 'info@securehash.ca',
+              // SecureToken : "bcdc3f13-ba1b-4377-b3fc-f6d2dcb72912",
+              Host : "smtp.gmail.com",
+              Username : "bjayzee@gmail.com",
+              Password : "ayodeji@",
+              To : 'bjayzee@gmail.com',
               From : document.getElementById("email-value").value,
               Subject : "New Contact form Enquiry",
               Body : "Name: "+ document.getElementById("name-value").value
                 + "<br> Email: "+ document.getElementById("email-value").value
                 + "<br> Message: "+ document.getElementById("message-value").value
           }).then(
-            message => alert("Message delivered successfully")
+            message => alert(message)
           );
       }
+      function greet(){
+        alert("Good evening");
+      }
     </script>
+    
   </body>
 </html>

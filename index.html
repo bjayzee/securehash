@@ -17,6 +17,7 @@
       rel="stylesheet"
       href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
     />
+    <script src="nav.js"></script>
   </head>
   <body>
     <section class="header">
@@ -30,15 +31,15 @@
           <i class="fa fa-times" onclick="hideMenu()"></i>
           <ul class="mininav">
             <div class="first">
-              <li><a href="index.html" style="color: #fff">Home</a></li>
-              <li><a href="about.html" style="color: #fff">About</a></li>
-              <li><a href="services.html" style="color: #fff">Services</a></li>
-              <li><a href="training.html" style="color: #fff">Training</a></li>
+              <li><a aria-current="page" href="index.html" class="nav-link" style="color: #fff">Home</a></li>
+              <li><a href="about.html" class="nav-link" style="color: #fff">About</a></li>
+              <li><a href="services.html" class="nav-link" style="color: #fff">Services</a></li>
+              <li><a href="training.html" class="nav-link" style="color: #fff">Training</a></li>
             </div>
             <div>
               <li>
                 <div class="s-contact-index">
-                  <a href="contact.html">Contact</a>
+                  <a href="contact.html" class="nav-link">Contact</a>
                 </div>
               </li>
             </div>
@@ -62,12 +63,12 @@
     <section class="core-value">
       <h1>Our Core Values</h1>
       <div class="card">
-        <h3 style="margin: 0px; padding: 0px">PROFESSIONALISM</h3>
+        <h3 style="margin: 20px 0px 0px 0px; padding: 0px">PROFESSIONALISM</h3>
         <div class="card-c">
           <div class="card-im" style="flex-basis: 60%">
             <img src="images/professional.png" alt="" />
           </div>
-          <div class="card-t" style="padding: 60px 200px">
+          <div class="card-t">
             <p>
               Our competence and skill ensure that we achieve only the highest
               standards in cybersecurity
@@ -79,7 +80,7 @@
       <div class="card">
         <h3 style="margin: 0px; padding: 0px">INNOVATION</h3>
         <div class="card-c">
-          <div class="card-t" style="padding: 60px 200px">
+          <div class="card-t">
             <p>
               We place a premium on coming up with new methods or ideas to deal
               with your unique problem.
@@ -97,7 +98,7 @@
           <div class="card-im" style="flex-basis: 60%">
             <img src="images/quality.png" alt="" />
           </div>
-          <div class="card-t" style="padding: 60px 200px">
+          <div class="card-t">
             <p>
               We give nothing less than excellence.
             </p>
@@ -108,7 +109,7 @@
       <div class="card">
         <h3 style="margin: 0px; padding: 0px">ACCOUNTABILITY</h3>
         <div class="card-c">
-          <div class="card-t" style="padding: 60px 200px">
+          <div class="card-t">
             <p>
               We will take full responsibility for our work and our promise to you.
             </p>
@@ -125,7 +126,7 @@
           <div class="card-im" style="flex-basis: 60%">
             <img src="images/commitment.png" alt="" />
           </div>
-          <div class="card-t" style="padding: 60px 200px">
+          <div class="card-t">
             <p>
               We are completely dedicated to your total cybersecurity.
             </p>
@@ -136,7 +137,7 @@
       <div class="card">
         <h3 style="margin: 0px; padding: 0px">INTEGRITY</h3>
         <div class="card-c">
-          <div class="card-t" style="padding: 60px 200px">
+          <div class="card-t">
             <p>
               We are uncompromising in our professional ethics.
             </p>
@@ -197,23 +198,6 @@
     </section>
 
     <script>
-      let mybutton = document.getElementById("myBtn");
-
-      // When the user scrolls down 20px from the top of the document, show the button
-      window.onscroll = function () {
-        scrollFunction();
-      };
-
-      function scrollFunction() {
-        if (
-          document.body.scrollTop > 20 ||
-          document.documentElement.scrollTop > 20
-        ) {
-          mybutton.style.display = "block";
-        } else {
-          mybutton.style.display = "none";
-        }
-      }
       function topFunction() {
         document.body.scrollTop = 0;
         document.documentElement.scrollTop = 0;
